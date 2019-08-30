@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+
+<script type="text/javascript">  
+	function check(){
+       var myImage= document.getElementById('userImage');
+
+       Tesseract.recognize(myImage).then(function(result){
+
+        console.log(result.text);
+
+        alert(result.text);
+
+        });
+   }
+
+        </script>
+
+<title> OCR DEMO</title>
+
+</head>
+
+<body>
+
+        <img id="userImage" src="21.png"/>  
+        <button onclick="check()">Submit1
+          
+        </button>
+</body>
+
+</html>
