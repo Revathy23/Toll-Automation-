@@ -30,7 +30,7 @@
 	  	//$s1 = $s1 + 1;
 	  	//$sql = ;
       	$result = mysqli_query($conn,"INSERT INTO `registration` (`Sno`, `Name`, `Aadhar_no`, `Mail_id`, `Amount_present`, `Vehicle_number`) VALUES ('13', '$name', '$adhr', '$email', '$amt', '$vehi')");
-      	header("location:index.html");
+      	header("location:check.html");
 	  }
 	}
 	else
