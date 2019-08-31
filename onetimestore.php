@@ -1,4 +1,3 @@
-
 <?php
     
     include("connect.php");
@@ -10,8 +9,6 @@
 	  $name = mysqli_real_escape_string($conn,$_POST['fname']);
       $adhr = mysqli_real_escape_string($conn,$_POST['adhar']);
       $email = mysqli_real_escape_string($conn,$_POST['email']);
-      $amt = mysqli_real_escape_string($conn,$_POST['amount']);
-      $vehi = mysqli_real_escape_string($conn,$_POST['vehicle']);
       
       $query = "SELECT Aadhar_no FROM registration WHERE Aadhar_no = '$adhr'";
 	  if(!$result = mysqli_query($conn, $query))
@@ -29,8 +26,8 @@
 	  	//$s1 = mysqli_query($conn,"SELECT Sno FROM registration ORDER BY Sno DESC LIMIT 1");
 	  	//$s1 = $s1 + 1;
 	  	//$sql = ;
-      	$result = mysqli_query($conn,"INSERT INTO `registration` (`Sno`, `Name`, `Aadhar_no`, `Mail_id`, `Amount_present`, `Vehicle_number`) VALUES ('13', '$name', '$adhr', '$email', '$amt', '$vehi')");
-      	header("location:index.html");
+      	$result = mysqli_query($conn,"INSERT INTO `vehiclecross`(`S.No`, `Vehicle_number`, `Aadhar`, `email`) VALUES ('1','$name','$adhr','$email')");
+      	header("location:check.html");
 	  }
 	}
 	else

@@ -1,3 +1,4 @@
+var img=null;
 (function() {
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
@@ -65,14 +66,14 @@
   // captured.
 
   function clearphoto() {
-    var img=null;
+    
     var context = canvas.getContext('2d');
     context.fillStyle = "#AAA";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     var data = canvas.toDataURL('image/png');
     img = photo.setAttribute('src', data);
-    echo "img";
+
   }
   
   // Capture a photo by fetching the current contents of the video
