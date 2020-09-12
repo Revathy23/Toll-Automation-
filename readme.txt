@@ -22,7 +22,7 @@ DEPLOYMENT:
    In TollPlaza,for automatic tax payment. 
    
 CONTACT INFO:
-   tharunr22@gmail.com
+   revathy.velumani23@gmail.com
 
 DATE:
    31.08.2019
